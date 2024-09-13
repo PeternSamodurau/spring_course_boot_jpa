@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+    <appenders>
+        <File name="InfoMyLogger" fileName="C:\Users\АВС\IdeaProjects\spring_course_boot_jpa\log\info.log" append="false">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36}:%L - %msg%n"/>
+            <Filters>
+                <ThresholdFilter level="error" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+        </File>
+        <File name="ErrorsMyLogger" fileName="C:\Users\АВС\IdeaProjects\spring_course_boot_jpa\log\error.log" append="false">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36}:%L - %msg%n"/>
+        </File>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36}:%L - %msg%n"/>
+        </Console>
+    </appenders>
+
+    <loggers>
+        <Logger name="MyLogger" level="info" additivity="false">
+            <appender-ref ref="InfoMyLogger" level="info"/>
+            <appender-ref ref="ErrorsMyLogger" level="error"/>
+            <appender-ref ref="Console" level="info"/>
+        </Logger>
+
+        <root level="info">
+            <appender-ref ref="InfoMyLogger" level="info"/>
+            <appender-ref ref="ErrorsMyLogger" level="error"/>
+            <appender-ref ref="Console" level="info"/>
+        </root>
+    </loggers>
+</configuration>
