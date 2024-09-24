@@ -1,37 +1,37 @@
-2024-09-18 16:47:55.030 [restartedMain] INFO  com.zaurtregulov.spring.boot.jpa.SpringCourseBootJpaApplication:50 - Starting SpringCourseBootJpaApplication using Java 17.0.8.1 with PID 3988 (C:\Users\АВС\IdeaProjects\spring_course_boot_jpa\target\classes started by PeterS in C:\Users\АВС\IdeaProjects\spring_course_boot_jpa)
-2024-09-18 16:47:55.052 [restartedMain] INFO  com.zaurtregulov.spring.boot.jpa.SpringCourseBootJpaApplication:654 - No active profile set, falling back to 1 default profile: "default"
-2024-09-18 16:47:55.159 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-18 16:47:55.160 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-18 16:47:57.576 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-09-18 16:47:57.719 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 121 ms. Found 2 JPA repository interfaces.
-2024-09-18 16:48:00.057 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:111 - Tomcat initialized with port 3333 (http)
-2024-09-18 16:48:00.086 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-3333"]
-2024-09-18 16:48:00.096 [restartedMain] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
-2024-09-18 16:48:00.096 [restartedMain] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-18 16:48:00.224 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]:173 - Initializing Spring embedded WebApplicationContext
-2024-09-18 16:48:00.228 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 5064 ms
-2024-09-18 16:48:00.912 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:109 - HikariPool-1 - Starting...
-2024-09-18 16:48:01.722 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b22ad71
-2024-09-18 16:48:01.731 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:122 - HikariPool-1 - Start completed.
-2024-09-18 16:48:01.829 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-09-18 16:48:02.058 [restartedMain] INFO  org.hibernate.Version:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-09-18 16:48:02.167 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
-2024-09-18 16:48:03.768 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-09-18 16:48:03.974 [restartedMain] WARN  org.hibernate.orm.deprecation:153 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-09-18 16:48:06.076 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-09-18 16:48:06.083 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-09-18 16:48:07.505 [restartedMain] INFO  com.zaurtregulov.spring.boot.jpa.service.AppServiceImpl:41 - Application list loaded successfully
-2024-09-18 16:48:08.215 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-09-18 16:48:08.217 [restartedMain] WARN  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-09-18 16:48:09.575 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
-2024-09-18 16:48:09.607 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-3333"]
-2024-09-18 16:48:09.649 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:243 - Tomcat started on port 3333 (http) with context path '/api'
-2024-09-18 16:48:09.670 [restartedMain] INFO  com.zaurtregulov.spring.boot.jpa.SpringCourseBootJpaApplication:56 - Started SpringCourseBootJpaApplication in 15.896 seconds (process running for 18.089)
-2024-09-18 16:48:09.677 [restartedMain] INFO  com.zaurtregulov.spring.boot.jpa.SpringCourseBootJpaApplication:16 - ____________________________________________New RUN: Wed Sep 18 16:48:09 MSK 2024
-2024-09-18 16:48:33.190 [http-nio-3333-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-18 16:48:33.191 [http-nio-3333-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
-2024-09-18 16:48:33.195 [http-nio-3333-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:554 - Completed initialization in 3 ms
-2024-09-18 16:49:15.566 [http-nio-3333-exec-5] INFO  com.zaurtregulov.spring.boot.jpa.service.AppServiceImpl:56 - Application by id found successfully: 1
-2024-09-18 16:50:52.306 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-09-18 16:50:52.313 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
-2024-09-18 16:50:52.331 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-09-24 17:28:52.034 [restartedMain] INFO  com.zaurtregulov.spring.boot.jpa.SpringCourseBootJpaApplication:50 - Starting SpringCourseBootJpaApplication using Java 17.0.8.1 with PID 2724 (C:\Users\АВС\IdeaProjects\spring_course_boot_jpa\target\classes started by PeterS in C:\Users\АВС\IdeaProjects\spring_course_boot_jpa)
+2024-09-24 17:28:52.062 [restartedMain] INFO  com.zaurtregulov.spring.boot.jpa.SpringCourseBootJpaApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 17:28:52.207 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-24 17:28:52.208 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-24 17:28:59.577 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-24 17:28:59.982 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 374 ms. Found 2 JPA repository interfaces.
+2024-09-24 17:29:04.633 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:111 - Tomcat initialized with port 3333 (http)
+2024-09-24 17:29:04.663 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-3333"]
+2024-09-24 17:29:04.682 [restartedMain] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2024-09-24 17:29:04.684 [restartedMain] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24 17:29:04.886 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/spring-boot]:173 - Initializing Spring embedded WebApplicationContext
+2024-09-24 17:29:04.893 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 12677 ms
+2024-09-24 17:29:06.370 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:109 - HikariPool-1 - Starting...
+2024-09-24 17:29:07.019 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c974ff2
+2024-09-24 17:29:07.025 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-09-24 17:29:07.123 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-24 17:29:07.340 [restartedMain] INFO  org.hibernate.Version:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-24 17:29:07.455 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-09-24 17:29:08.587 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-24 17:29:08.810 [restartedMain] WARN  org.hibernate.orm.deprecation:153 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-24 17:29:11.074 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-24 17:29:11.080 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24 17:29:12.899 [restartedMain] INFO  com.zaurtregulov.spring.boot.jpa.service.AppServiceImpl:41 - Application list loaded successfully
+2024-09-24 17:29:13.529 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer:83 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-24 17:29:13.533 [restartedMain] WARN  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:72 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-24 17:29:14.634 [restartedMain] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:60 - Exposing 1 endpoint beneath base path '/actuator'
+2024-09-24 17:29:15.983 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-09-24 17:29:16.130 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-3333"]
+2024-09-24 17:29:16.179 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:243 - Tomcat started on port 3333 (http) with context path '/spring-boot'
+2024-09-24 17:29:16.260 [restartedMain] INFO  com.zaurtregulov.spring.boot.jpa.SpringCourseBootJpaApplication:56 - Started SpringCourseBootJpaApplication in 25.765 seconds (process running for 30.215)
+2024-09-24 17:29:16.279 [restartedMain] INFO  com.zaurtregulov.spring.boot.jpa.SpringCourseBootJpaApplication:20 - ____________________________________________New RUN: Tue Sep 24 17:29:16 MSK 2024
+2024-09-24 17:29:34.385 [http-nio-3333-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/spring-boot]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 17:29:34.385 [http-nio-3333-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-09-24 17:29:34.390 [http-nio-3333-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:554 - Completed initialization in 4 ms
+2024-09-24 18:10:31.041 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-24 18:10:31.056 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-09-24 18:10:31.084 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource:351 - HikariPool-1 - Shutdown completed.

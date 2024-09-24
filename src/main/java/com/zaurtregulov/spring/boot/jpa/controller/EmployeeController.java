@@ -3,9 +3,11 @@ package com.zaurtregulov.spring.boot.jpa.controller;
 
 import com.zaurtregulov.spring.boot.jpa.entity.Employee;
 import com.zaurtregulov.spring.boot.jpa.service.EmployeeService;
-import jakarta.transaction.Transactional;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,6 +15,7 @@ import java.util.List;
 @RestController //это контроллер приложения который управляет Rest запросами и возвращает ответы в формате JSON
 @RequestMapping("/api") //аннотация, которая указывает, что URL-адрес начинается с "/api"
 @Slf4j
+@AllArgsConstructor
 public class EmployeeController {
 
     @Autowired //аннотация @Autowired используется для автоматического создания бинов
@@ -20,7 +23,6 @@ public class EmployeeController {
 
     //  @Secured("ADMIN")
     @GetMapping("/employees")
-    @Transactional
     //аннотация, которая указывает, что URL-адрес "/employees" будет обрабатываться этим контроллером методом GET
     public List<Employee> showAllEmployees() {
 
@@ -30,8 +32,7 @@ public class EmployeeController {
         return allEmployees;
     }
 
-    @GetMapping("/employee/id/{id}")
-//аннотация, которая указывает, что URL-адрес "/employees/{id}" будет обрабатываться этим контроллером методом GET
+    @GetMapping("/employee/id/{id}") //аннотация, которая указывает, что URL-адрес "/employees/{id}" будет обрабатываться этим контроллером методом GET
     public Employee getEmployee(@PathVariable("id") int id) {
 
         Employee employee = employeeService.getEmployee(id);//получаем сотрудника по id
@@ -72,5 +73,23 @@ public class EmployeeController {
 
         log.info("Employee deleted: " + employee);
         return "Employee with ID = " + id + " was deleted";
+    }
+
+    @PutMapping("/employees/load")
+    public ResponseEntity<String> loadEmployees() {
+        try {
+            employeeService.loadEmployeeInDB();
+
+            log.info("Employees loaded successfully");
+            return ResponseEntity.ok("Employees loaded successfully");
+        } catch (Exception e) {
+            log.error("Error loading employees", e);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error loading employees");
+        }
+    }
+    @GetMapping("/get-employee/name/{name}")
+    public List<Employee> showAllEmployeesByName(@PathVariable("name") String name){
+
+        return employeeService.findAllByName(name);
     }
 }

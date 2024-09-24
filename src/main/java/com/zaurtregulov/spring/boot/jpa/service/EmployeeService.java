@@ -8,6 +8,7 @@ import java.util.List;
 // DAO- позволяет абстрагировать доступ к данным от бизнес-логики,
 // что упрощает изменение и поддержку приложения.
 public interface EmployeeService {
+    public void loadEmployeeInDB();
 
     public List<Employee> getAllEmployees();
 
@@ -16,4 +17,6 @@ public interface EmployeeService {
     public Employee getEmployee(int id);
 
     public void deleteEmployee(int id);
+
+    public List<Employee> findAllByName(String name);
 }
